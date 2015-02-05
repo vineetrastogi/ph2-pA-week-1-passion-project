@@ -1,0 +1,109 @@
+{
+  "Touchdowns": [
+    {
+      "Player": "Jerry Rice",
+      "Statistic": "208",
+      "Ranking": "1"
+    },
+    {
+      "Player": "Emmitt Smith",
+      "Statistic": "175",
+      "Ranking": "2"
+    },
+    {
+      "Player": "LaDainian Tomlinson",
+      "Statistic": "162",
+      "Ranking": "3"
+    },
+    {
+      "Player": "Randy Moss",
+      "Statistic": "157",
+      "Ranking": "4"
+    },
+    {
+      "Player": "Terrell Owens",
+      "Statistic": "156",
+      "Ranking": "5"
+    },
+    {
+      "Player": "Marcus Allen",
+      "Statistic": "145",
+      "Ranking": "6"
+    },
+    {
+      "Player": "Marshall Faulk",
+      "Statistic": "136",
+      "Ranking": "7"
+    },
+    {
+      "Player": "Cris Carter",
+      "Statistic": "131",
+      "Ranking": "8"
+    },
+    {
+      "Player": "Marvin Harrison",
+      "Statistic": "128",
+      "Ranking": "9"
+    },
+    {
+      "Player": "Jim Brown",
+      "Statistic": "126",
+      "Ranking": "10"
+    },
+    {
+      "Player": "Walter Payton",
+      "Statistic": "125",
+      "Ranking": "11"
+    },
+    {
+      "Player": "John Riggins",
+      "Statistic": "116",
+      "Ranking": "12"
+    },
+    {
+      "Player": "Lenny Moore",
+      "Statistic": "113",
+      "Ranking": "13"
+    },
+    {
+      "Player": "Shaun Alexander",
+      "Statistic": "112",
+      "Ranking": "14"
+    },
+    {
+      "Player": "Tony Gonzalez",
+      "Statistic": "111",
+      "Ranking": "15"
+    },
+    {
+      "Player": "Barry Sanders",
+      "Statistic": "109",
+      "Ranking": "16"
+    },
+    {
+      "Player": "Don Hutson",
+      "Statistic": "105",
+      "Ranking": "17"
+    },
+    {
+      "Player": "Tim Brown",
+      "Statistic": "105",
+      "Ranking": "18"
+    },
+    {
+      "Player": "Steve Largent",
+      "Statistic": "101",
+      "Ranking": "19"
+    },
+    {
+      "Player": "Franco Harris",
+      "Statistic": "100",
+      "Ranking": "20"
+    },
+    {
+      "Player": "Curtis Martin",
+      "Statistic": "100",
+      "Ranking": "21"
+    }
+  ]
+}
