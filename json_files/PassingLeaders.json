@@ -2,103 +2,83 @@
   "PassingYards": [
     {
       "Player": "Brett Favre",
-      "Statistic": 71838,
-      "Ranking": "1"
+      "Statistic": "71,838"
     },
     {
-      "Player": "Peyton Manning",
-      "Statistic": 69691,
-      "Ranking": "2"
+      "Player": "PEYTON MANNING",
+      "Statistic": "69,691"
     },
     {
       "Player": "Dan Marino",
-      "Statistic": 61361,
-      "Ranking": "3"
+      "Statistic": "61,361"
     },
     {
-      "Player": "Drew Brees",
-      "Statistic": 56033,
-      "Ranking": "4"
+      "Player": "DREW BREES",
+      "Statistic": "56,033"
     },
     {
-      "Player": "Tom Brady",
-      "Statistic": 53258,
-      "Ranking": "5"
+      "Player": "TOM BRADY",
+      "Statistic": "53,258"
     },
     {
       "Player": "John Elway",
-      "Statistic": 51475,
-      "Ranking": "6"
+      "Statistic": "51,475"
     },
     {
       "Player": "Warren Moon",
-      "Statistic": 49325,
-      "Ranking": "7"
+      "Statistic": "49,325"
     },
     {
       "Player": "Fran Tarkenton",
-      "Statistic": 47003,
-      "Ranking": "8"
+      "Statistic": "47,003"
     },
     {
       "Player": "Vinny Testaverde",
-      "Statistic": 46233,
-      "Ranking": "9"
+      "Statistic": "46,233"
     },
     {
       "Player": "Drew Bledsoe",
-      "Statistic": 44611,
-      "Ranking": "10"
+      "Statistic": "44,611"
     },
     {
       "Player": "Dan Fouts",
-      "Statistic": 43040,
-      "Ranking": "11"
+      "Statistic": "43,040"
     },
     {
       "Player": "Kerry Collins",
-      "Statistic": 40922,
-      "Ranking": "12"
+      "Statistic": "40,922"
     },
     {
       "Player": "Joe Montana",
-      "Statistic": 40551,
-      "Ranking": "13"
+      "Statistic": "40,551"
     },
     {
       "Player": "Johnny Unitas",
-      "Statistic": 40239,
-      "Ranking": "14"
+      "Statistic": "40,239"
     },
     {
-      "Player": "Eli Manning",
-      "Statistic": 39755,
-      "Ranking": "15"
+      "Player": "ELI MANNING",
+      "Statistic": "39,755"
     },
     {
-      "Player": "Ben Roethlisberger",
-      "Statistic": 39057,
-      "Ranking": "16"
+      "Player": "BEN ROETHLISBERGER",
+      "Statistic": "39,057"
     },
     {
       "Player": "Dave Krieg",
-      "Statistic": 38147,
-      "Ranking": "17"
+      "Statistic": "38,147"
     },
     {
       "Player": "Boomer Esiason",
-      "Statistic": "37920",
-      "Ranking": "18"
+      "Statistic": "37,920"
     },
     {
-      "Player": "Donovan Mcnabb",
-      "Statistic": 37276,
-      "Ranking": "19"
+      "Player": "Donovan McNabb",
+      "Statistic": "37,276"
     },
     {
-      "Player": "Philip Rivers",
-      "Statistic": 36655,
-      "Ranking": "20"
-    },
+      "Player": "PHILIP RIVERS",
+      "Statistic": "36,655"
+    }
   ]
 }

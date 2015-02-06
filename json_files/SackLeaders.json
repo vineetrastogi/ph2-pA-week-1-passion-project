@@ -1,0 +1,84 @@
+{
+  "Sacks": [
+    {
+      "Player": "Bruce Smith",
+      "Statistic": "200"
+    },
+    {
+      "Player": "Reggie White",
+      "Statistic": "198"
+    },
+    {
+      "Player": "Kevin Greene",
+      "Statistic": "160"
+    },
+    {
+      "Player": "Chris Doleman",
+      "Statistic": "150 1/2"
+    },
+    {
+      "Player": "Michael Strahan",
+      "Statistic": "141 1/2"
+    },
+    {
+      "Player": "Jason Taylor",
+      "Statistic": "139 1/2"
+    },
+    {
+      "Player": "John Randle",
+      "Statistic": "137 1/2"
+    },
+    {
+      "Player": "Richard Dent",
+      "Statistic": "137 1/2"
+    },
+    {
+      "Player": "JARED ALLEN",
+      "Statistic": "134"
+    },
+    {
+      "Player": "JOHN ABRAHAM",
+      "Statistic": "133 1/2"
+    },
+    {
+      "Player": "Lawrence Taylor",
+      "Statistic": "132 1/2"
+    },
+    {
+      "Player": "Leslie O'Neal",
+      "Statistic": "132 1/2"
+    },
+    {
+      "Player": "Rickey Jackson",
+      "Statistic": "128"
+    },
+    {
+      "Player": "DeMARCUS WARE",
+      "Statistic": "127"
+    },
+    {
+      "Player": "Derrick Thomas",
+      "Statistic": "126 1/2"
+    },
+    {
+      "Player": "JULIUS PEPPERS",
+      "Statistic": "125 1/2"
+    },
+    {
+      "Player": "Simeon Rice",
+      "Statistic": "122"
+    },
+    {
+      "Player": "Clyde Simmons",
+      "Statistic": "121 1/2"
+    },
+    {
+      "Player": "Sean Jones",
+      "Statistic": "113"
+    },
+    {
+      "Player": "DWIGHT FREENEY",
+      "Statistic": "111 1/2"
+    }
+  ]
+}

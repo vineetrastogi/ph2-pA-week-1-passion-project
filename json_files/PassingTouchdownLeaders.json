@@ -1,104 +1,84 @@
 {
   "PassingTouchdowns": [
     {
-      "Player": "Brett Favre",
-      "Statistic": 508,
-      "Ranking": "1"
+      "Player": "PEYTON MANNING",
+      "Statistic": "530"
     },
     {
-      "Player": "Peyton Manning",
-      "Statistic": 530,
-      "Ranking": "2"
+      "Player": "Brett Favre",
+      "Statistic": "508"
     },
     {
       "Player": "Dan Marino",
-      "Statistic": 420,
-      "Ranking": "3"
+      "Statistic": "420"
     },
     {
-      "Player": "Drew Brees",
-      "Statistic": 396,
-      "Ranking": "4"
+      "Player": "DREW BREES",
+      "Statistic": "396"
     },
     {
-      "Player": "Tom Brady",
-      "Statistic": 392,
-      "Ranking": "5"
-    },
-    {
-      "Player": "John Elway",
-      "Statistic": 300,
-      "Ranking": "6"
-    },
-    {
-      "Player": "Warren Moon",
-      "Statistic": 291,
-      "Ranking": "7"
+      "Player": "TOM BRADY",
+      "Statistic": "392"
     },
     {
       "Player": "Fran Tarkenton",
-      "Statistic": 342,
-      "Ranking": "8"
+      "Statistic": "342"
     },
     {
-      "Player": "Vinny Testaverde",
-      "Statistic": 275,
-      "Ranking": "9"
+      "Player": "John Elway",
+      "Statistic": "300"
     },
     {
-      "Player": "Drew Bledsoe",
-      "Statistic": 44611,
-      "Ranking": "10"
-    },
-    {
-      "Player": "Dan Fouts",
-      "Statistic": 43040,
-      "Ranking": "11"
-    },
-    {
-      "Player": "Kerry Collins",
-      "Statistic": 40922,
-      "Ranking": "12"
-    },
-    {
-      "Player": "Joe Montana",
-      "Statistic": 273,
-      "Ranking": "13"
+      "Player": "Warren Moon",
+      "Statistic": "291"
     },
     {
       "Player": "Johnny Unitas",
-      "Statistic": 290,
-      "Ranking": "14"
+      "Statistic": "290"
     },
     {
-      "Player": "Eli Manning",
-      "Statistic": 39755,
-      "Ranking": "15"
+      "Player": "Vinny Testaverde",
+      "Statistic": "275"
     },
     {
-      "Player": "Ben Roethlisberger",
-      "Statistic": 39057,
-      "Ranking": "16"
+      "Player": "Joe Montana",
+      "Statistic": "273"
     },
     {
       "Player": "Dave Krieg",
-      "Statistic": 38147,
-      "Ranking": "17"
+      "Statistic": "261"
+    },
+    {
+      "Player": "ELI MANNING",
+      "Statistic": "259"
+    },
+    {
+      "Player": "Sonny Jurgensen",
+      "Statistic": "255"
+    },
+    {
+      "Player": "Dan Fouts",
+      "Statistic": "254"
+    },
+    {
+      "Player": "PHILIP RIVERS",
+      "Statistic": "252"
+    },
+    {
+      "Player": "BEN ROETHLISBERGER",
+      "Statistic": "251"
+    },
+    {
+      "Player": "Drew Bledsoe",
+      "Statistic": "251"
     },
     {
       "Player": "Boomer Esiason",
-      "Statistic": "37920",
-      "Ranking": "18"
+      "Statistic": "247"
     },
     {
-      "Player": "Donovan Mcnabb",
-      "Statistic": 37276,
-      "Ranking": "19"
-    },
-    {
-      "Player": "Philip Rivers",
-      "Statistic": 36655,
-      "Ranking": "20"
-    },
+      "Player": "John Hadl",
+      "Statistic": "244"
+    }
   ]
 }
