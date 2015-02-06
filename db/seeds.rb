@@ -54,7 +54,7 @@ end
 
 # Interception Leader Players
 
-interception_leader_players = JSON.load(open("json_files/PassingLeaders.json").read)
+interception_leader_players = JSON.load(open("json_files/InterceptionLeaders.json").read)
 
 interception_leader_players["Interceptions"].each do |item|
   Player.create(name: item["Player"], interception: item["Statistic"].to_i)
@@ -62,10 +62,14 @@ end
 
 # Sacks Leader Players
 
-sack_leader_players = JSON.load(open("json_files/PassingLeaders.json").read)
+sack_leader_players = JSON.load(open("json_files/SackLeaders.json").read)
 
 sack_leader_players["Sacks"].each do |item|
   Player.create(name: item["Player"], sacks: item["Statistic"].to_i)
 end
+
+
+# Player.where.not(touchdown: nil) will return all players with touchdowns
+# Player.where.not(interception: nil) will return all players with interceptions
 
 
