@@ -1,4 +1,4 @@
 class Player < ActiveRecord::Base
-  has_many :teams
+  belongs_to :team
   # Remember to create a migration!
 end
