@@ -29,3 +29,44 @@ touchdown_leader_players["Touchdowns"].each do |item|
   Player.find_or_create_by(name: item["Player"], touchdown: item["Statistic"].delete(',').to_i)
 end
 
+# Receiving Leader Players
+touchdown_leader_players = JSON.load(open("json_files/ReceptionLeaders.json").read)
+
+reception_leader_players["Receptions"].each do |item|
+  Player.find_or_create_by(name: item["Player"], receiving: item["Statistic"])
+end
+
+# Passing Leader Players
+
+touchdown_leader_players = JSON.load(open("json_files/PassingLeaders.json").read)
+
+reception_leader_players["PassingYards"].each do |item|
+  Player.find_or_create_by(name: item["Player"], passingyd: item["Statistic"])
+end
+
+# Passing Touchdown Leader Players
+
+touchdown_leader_players = JSON.load(open("json_files/PassingTouchdownLeaders.json").read)
+
+reception_leader_players["PassingTouchdowns"].each do |item|
+  Player.find_or_create_by(name: item["Player"], passtd: item["Statistic"])
+end
+
+
+# Interception Leader Players
+
+touchdown_leader_players = JSON.load(open("json_files/PassingLeaders.json").read)
+
+reception_leader_players["PassingYards"].each do |item|
+  Player.find_or_create_by(name: item["Player"], passingyd: item["Statistic"])
+end
+
+# Sacks Leader Players
+
+touchdown_leader_players = JSON.load(open("json_files/PassingLeaders.json").read)
+
+reception_leader_players["PassingYards"].each do |item|
+  Player.find_or_create_by(name: item["Player"], passingyd: item["Statistic"])
+end
+
+

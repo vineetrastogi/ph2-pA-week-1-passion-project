@@ -1,0 +1,54 @@
+{
+  "Receptions": [
+    {
+      "Player": "Jerry Rice",
+      "Statistic": 1549,
+      "Ranking": "1"
+    },
+    {
+      "Player": "Tony Gonzalez",
+      "Statistic": 1325,
+      "Ranking": "2"
+    },
+    {
+      "Player": "Marvin Harrison",
+      "Statistic": 1102,
+      "Ranking": "3"
+    },
+    {
+      "Player": "Chris Carter",
+      "Statistic": 1101,
+      "Ranking": "4"
+    },
+    {
+      "Player": "Tim Brown",
+      "Statistic": 1094,
+      "Ranking": "5"
+    },
+    {
+      "Player": "Terrell Owens",
+      "Statistic": 1078,
+      "Ranking": "6"
+    },
+    {
+      "Player": "Reggie Wayne",
+      "Statistic": 1070,
+      "Ranking": "7"
+    },
+    {
+      "Player": "Isaac Bruce",
+      "Statistic": 1024,
+      "Ranking": "8"
+    },
+    {
+      "Player": "Andre Johnson",
+      "Statistic": 1012,
+      "Ranking": "9"
+    },
+    {
+      "Player": "Hines Ward",
+      "Statistic": 1000,
+      "Ranking": "10"
+    },
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "PassingTouchdowns": [
+    {
+      "Player": "Brett Favre",
+      "Statistic": 508,
+      "Ranking": "1"
+    },
+    {
+      "Player": "Peyton Manning",
+      "Statistic": 530,
+      "Ranking": "2"
+    },
+    {
+      "Player": "Dan Marino",
+      "Statistic": 420,
+      "Ranking": "3"
+    },
+    {
+      "Player": "Drew Brees",
+      "Statistic": 396,
+      "Ranking": "4"
+    },
+    {
+      "Player": "Tom Brady",
+      "Statistic": 392,
+      "Ranking": "5"
+    },
+    {
+      "Player": "John Elway",
+      "Statistic": 300,
+      "Ranking": "6"
+    },
+    {
+      "Player": "Warren Moon",
+      "Statistic": 291,
+      "Ranking": "7"
+    },
+    {
+      "Player": "Fran Tarkenton",
+      "Statistic": 342,
+      "Ranking": "8"
+    },
+    {
+      "Player": "Vinny Testaverde",
+      "Statistic": 275,
+      "Ranking": "9"
+    },
+    {
+      "Player": "Drew Bledsoe",
+      "Statistic": 44611,
+      "Ranking": "10"
+    },
+    {
+      "Player": "Dan Fouts",
+      "Statistic": 43040,
+      "Ranking": "11"
+    },
+    {
+      "Player": "Kerry Collins",
+      "Statistic": 40922,
+      "Ranking": "12"
+    },
+    {
+      "Player": "Joe Montana",
+      "Statistic": 273,
+      "Ranking": "13"
+    },
+    {
+      "Player": "Johnny Unitas",
+      "Statistic": 290,
+      "Ranking": "14"
+    },
+    {
+      "Player": "Eli Manning",
+      "Statistic": 39755,
+      "Ranking": "15"
+    },
+    {
+      "Player": "Ben Roethlisberger",
+      "Statistic": 39057,
+      "Ranking": "16"
+    },
+    {
+      "Player": "Dave Krieg",
+      "Statistic": 38147,
+      "Ranking": "17"
+    },
+    {
+      "Player": "Boomer Esiason",
+      "Statistic": "37920",
+      "Ranking": "18"
+    },
+    {
+      "Player": "Donovan Mcnabb",
+      "Statistic": 37276,
+      "Ranking": "19"
+    },
+    {
+      "Player": "Philip Rivers",
+      "Statistic": 36655,
+      "Ranking": "20"
+    },
+  ]
+}
