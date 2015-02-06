@@ -4,8 +4,6 @@ source 'https://rubygems.org'
 # PostgreSQL driver
 gem 'pg'
 
-gem 'sqlite3'
-
 # Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'
