@@ -14,6 +14,21 @@ post '/' do
   "Please login, BRUH."
 end
 
+get '/logout' do
+  session.delete :user_id
+  redirect '/'
+end
+
+# displays create_team form
+get '/create_team' do
+  erb :create_team
+end
+
+# allows user to enter team name
+post '/create_team' do
+  erb :create_team
+end
+
 # displays every team
 get '/teams' do
   @teams = Team.all
@@ -28,6 +43,11 @@ post '/category/player' do
   erb :categories
 end
 
+get '/category' do
+  erb :categories
+end
+
+
 # lists the categories to choose from
 get '/category/*' do
   @category = params[:splat][0].to_s
@@ -40,21 +60,13 @@ post '/category/*' do
   erb :categories
 end
 
-# allows user to enter team name
-post '/create_team' do
-  erb :create_team
-end
-
 # creates a team based on the name inputted by the user
 post '/category' do
   Team.create(name: params[:team_name])
   erb :categories
 end
 
-# put '/category' do
-#   erb :categories
-# end
-
+# updates the team name with the user's input
 put '/teams' do
   @team_id = params[:team_id]
   @new_name = params[:new_name]
@@ -65,6 +77,7 @@ put '/teams' do
   redirect '/teams'
 end
 
+# allows the user to delete a player within the team
 delete '/teams' do
   # @team_id = params[:team_id]
   # @player_id = params[:player_id]
@@ -75,8 +88,4 @@ delete '/teams' do
   redirect '/teams'
 end
 
-get '/logout' do
-  session.delete :user_id
-  redirect '/'
-end
 
