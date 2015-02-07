@@ -35,11 +35,9 @@ ActiveRecord::Base.establish_connection(
   :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
   :host     => db.host,
   :port     => db.port,
-  :username => "vineetrastogi",
-  # db.user,
+  :username => db.user,
   # "vineetrastogi",
-  :password => "password",
-  # db.password,
+  :password => db.password,
   # "password",
   :database => DB_NAME,
   :encoding => 'utf8'
