@@ -1,4 +1,4 @@
 get '/' do
-  # @interceptions = Player.where.not(interception: nil)
-  # erb :index
+  @interceptions = Player.where.not(interception: nil)
+  erb :index
 end
