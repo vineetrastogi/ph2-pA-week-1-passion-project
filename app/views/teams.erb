@@ -1,11 +1,17 @@
 <html>
   <body>
-    <h1>Here is your teams with its players!</h1>
+    <h1>Here are your teams with their players!</h1>
     <% @teams.each do |team| %>
     	<p><%= team.name %></p>
+    	<form action="/teams" method="post">
+    		<input type="hidden" name="_method" value="put">
+    		<input type="text" name="new_name" placeholder="change your team name">
+    		<input type="submit" name="submit_changes" value="submit your changes!">
+    		 <input type="hidden" name="team_id" value="<%=team.id%>"/>
+    	</form>
     	<ol> <% team.players.each do |player| %>
     		<li><%=player.name%></li> 
-    	<%end%>
+    <%end%>
     	</ol>
     <%end%>
   </body>

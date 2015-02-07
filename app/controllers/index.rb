@@ -45,14 +45,24 @@ post '/create_team' do
   erb :create_team
 end
 
-# 
+# creates a team based on the name inputted by the user
 post '/category' do
   Team.create(name: params[:team_name])
   erb :categories
 end
 
-put '/category' do
-  erb :categories
+# put '/category' do
+#   erb :categories
+# end
+
+put '/teams' do
+  @team_id = params[:team_id]
+  @new_name = params[:new_name]
+  @current_team = Team.find(@team_id)
+  @current_team.name = @new_name
+  @current_team.save
+  # @current_team.update_attribute(name: @new_name)
+  redirect '/teams'
 end
 
 get '/logout' do
