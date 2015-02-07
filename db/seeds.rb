@@ -1,12 +1,6 @@
 require 'open-uri'
 require 'json'
 
-# # Categories
-# categories = JSON.load(open("json_files/Categories.json").read)
-
-# categories["All Time Categories"].each do |item|
-#   Category.create(name: item["Category"]["text"])
-# end
 
 # Rushing Leader Players
 rushing_leader_players = JSON.load(open("json_files/RushingLeaders.json").read)
@@ -71,5 +65,16 @@ end
 
 # Player.where.not(touchdown: nil) will return all players with touchdowns
 # Player.where.not(interception: nil) will return all players with interceptions
+
+# vineet = User.create(username: "vineet", password: "dbc")
+# seahawks = Team.create(name: "seawawks", user_id: vineet.id)
+# seahawks.players.create(name: "LeBron", rushing: 50 )
+# seahawks.players.create(name: "Jordan", touchdown: 100 )
+# seahawks.players.create(name: "Tom Brady", scoring: 999 )
+
+
+
+
+
 
 
