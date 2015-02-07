@@ -3,11 +3,10 @@ get '/' do
 end
 
 get '/category/*' do
-  category = params[:splat][0].to_s
-  @players = helper_category(category)
+  @category = params[:splat][0].to_s
+  @players = helper_category(@category)
   erb :players
 end
-
 
 get '/teams/player/add/:id' do
   @interceptions = Player.where.not(interception: nil)
