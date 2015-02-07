@@ -20,7 +20,7 @@ get '/teams' do
   erb :teams
 end
 
-# takes the last team created and adds the player which the user clicks on. This needs to be above category splat methods otherwise the splat will include /player 
+# takes the last team created and adds the player which the user clicks on. This needs to be above category splat methods otherwise the splat will include /player
 post '/category/player' do
   added_player = params[:player_id]
   @myteam = Team.last
@@ -62,6 +62,16 @@ put '/teams' do
   @current_team.name = @new_name
   @current_team.save
   # @current_team.update_attribute(name: @new_name)
+  redirect '/teams'
+end
+
+delete '/teams' do
+  # @team_id = params[:team_id]
+  # @player_id = params[:player_id]
+  # @current_team = Team.find(@team_id)
+  # @current_team.players.find(@player_id).destroy
+  player = Player.find(params[:player_id])
+  player.destroy
   redirect '/teams'
 end
 
