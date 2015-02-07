@@ -2,12 +2,9 @@
   <body>
     <h2><%=@category.capitalize%> Record Holders</h2>
     <% @players.each do |player| %>
-      <p><%= player.name %> --- <%= player.send(@category) %> <form action="/category/<%=@category%>" method="post">
-        <input type = "submit"
-        name="player"
-        value="Add to Team">
-        </input>
-        <input type="hidden" name="player_id" value="<%=player.id%>"</input>
+      <p><%= player.name %> --- <%= player.send(@category) %> <form action="/category/player" method="post">
+        <input type="submit" name="player" value="Add to Team"/>
+        <input type="hidden" name="player_id" value="<%=player.id%>"/>
       </form> </p>
     <% end %>
   </body>

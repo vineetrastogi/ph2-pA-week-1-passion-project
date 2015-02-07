@@ -1,5 +1,12 @@
 <html>
   <body>
-    <h1>Here are your teams!</h1>
+    <h1>Here is your teams with its players!</h1>
+    <% @teams.each do |team| %>
+    	<p><%= team.name %></p>
+    	<ol> <% team.players.each do |player| %>
+    		<li><%=player.name%></li> 
+    	<%end%>
+    	</ol>
+    <%end%>
   </body>
 </html>
