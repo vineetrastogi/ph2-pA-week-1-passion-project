@@ -30,10 +30,4 @@ class User < ActiveRecord::Base
     #   redirect_to home_url
     end
   end
-
-  # def validate_password
-  #   if :password_hash.length < 2
-  #     self.errors[:password_hash] << "Your password must be 3 or more characters!"
-  #   end
-  # end
 end
