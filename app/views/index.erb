@@ -1,22 +1,29 @@
   <html>
-    <body>
-      <h1>Welcome to the Make your Own All Time Fantasy NFL Team!</h1>
+  <head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/application.css">
+  </head>
+  <body>
+  <div class="main-body">
+      <h1>Welcome to the NFL All Time Leader Fantasy Football League</h1>
+      <br>
       <h2>Please Enter your Login Info Below</h2>
-          <form action="/create_team" method="post">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <input type="submit" name="save_info" value="Login BRUH">
-          </form>
-          <br>
+      <form action="/create_team" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" name="save_info" value="Login!">
+      </form>
+      <br>
 
-      <h3>Not a user? Register below!</h3>
-        <form action="/" method="post">
-          <input type="text" name="new_username" placeholder="Ex. Billy Jenkins">
-          <input type="password" name="new_password" placeholder="Something Secret">
-          <input type="submit" name="save_new_info" value="Register!">
-        </form>
-        <%= @error %>
-    </body>
+      <h2>Not a user? Register below!</h2>
+      <form action="/" method="post">
+        <input type="text" name="new_username" placeholder="Ex. Billy Jenkins">
+        <input type="password" name="new_password" placeholder="Something Secret">
+        <input type="submit" name="save_new_info" value="Register!">
+      </form>
+      <%= @error %>
+    </div>
+  </body>
   </html>
 
 

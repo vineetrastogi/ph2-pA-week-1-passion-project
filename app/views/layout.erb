@@ -18,11 +18,21 @@
   <title></title>
 </head>
 <body>
-  <% if session[:user_id]%>
-    <a href="/">Go Home</a>     <a href="/logout">Logout</a>
-  <% else  %>
-    <a href="/">Go Home</a>
-  <% end %>
+  <div class = "header">
+    <% if session[:user_id]%>
+    <ul>
+      <li class="header-links"><a href="/" style="text-decoration: none">Go Home</a></li>
+      <li class="header-links"><a href="/teams" style="text-decoration: none">View Your Teams</a></li>
+      <li class="header-links"><a href="/category" style="text-decoration: none">Go to Categories</a></li>
+      <li class="header-links"><a href="/create_team" style="text-decoration: none">Create a New Team</a></li>
+      <li class="header-links"><span class="logout"><a href="/logout" style="text-decoration: none">Logout</a></span></li>
+    </ul>
+    <% else  %>
+    <ul>
+      <li class="header-links"><a href="/" style="text-decoration: none">Go Home</a></li>
+    </ul>
+    <% end %>
+  </div>
   <%= yield %>
 </body>
 </html>

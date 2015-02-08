@@ -1,15 +1,21 @@
 <html>
-	<body>
+<head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/application.css">
+</head>
+<body>
+    <div class="main-body">
     <% if logged_in? %>
-		<h1>Create your Team!</h1>
-		   <form action="/category" method="post">
-            <input type="text" name="team_name" placeholder="Enter your team name!">
-            <input type="submit" value="Create Team" >
-          </form>
+    <h1>Create your Team!</h1>
+    <form action="/category" method="post">
+        <input type="text" name="team_name" placeholder="Enter your team name!">
+        <input type="submit" value="Create Team" >
+    </form>
     <% else %>
     <p>Go back home and log in, you can't see this!</p>
     <% end %>
-	</body>
+    </div>
+</body>
 </html>
 
 

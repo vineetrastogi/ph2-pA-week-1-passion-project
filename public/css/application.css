@@ -1,0 +1,76 @@
+html {
+	background-color: beige;
+}
+/*
+a:hover {
+	text-shadow: 10px 10px 20px #003D00;
+	}*/
+
+	.header-links a:link {
+		color: white;
+	}
+
+	.header-links a:visited {
+		color: white;
+	}
+
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: black;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.header-links{
+		color: white;
+		display: inline;
+		padding-right: 100px;
+		text-decoration: none;
+		text-align: center;
+		text-align: center;
+	}
+
+	.main-body {
+		padding-top: 70px;
+		max-width: 750px;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 20px;
+	}
+
+	.main-body h3{
+		text-decoration: underline;
+	}
+
+	.team-info {
+		font-size: 16px;
+		text-align: left;
+		margin-left: 135px;
+		margin-bottom: 25px;
+	}	
+
+	.category-list a:link {
+		text-decoration: none;
+		color: black;
+	}
+
+	.category-list a:visited {
+		color: black;
+	}
+
+	.category-list a:hover {
+		text-shadow: 0 0 15px green;
+	}
+
+	.player-list {
+		padding-top: 70px;
+		max-width: 750px;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: bolder;
+
+	}

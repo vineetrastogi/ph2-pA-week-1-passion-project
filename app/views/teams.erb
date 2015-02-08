@@ -1,24 +1,29 @@
 <html>
-  <body>
-    <a href="/category">Go to Categories</a>
+<body>
+    <head>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/application.css">
+    </head>
+    <div class="main-body">
     <h1>Here are your teams with their players!</h1>
     <% @teams.each do |team| %>
-    	<p><%= team.name %></p>
-    	<form action="/teams" method="post">
-    		<input type="hidden" name="_method" value="put">
-    		<input type="text" name="new_name" placeholder="change your team name">
-    		<input type="submit" name="submit_changes" value="submit your changes!">
-    		 <input type="hidden" name="team_id" value="<%=team.id%>"/>
-    	</form>
-    	<ol> <% team.players.each do |player| %>
-    		<li><%=player.name%></li>
-                <form action="/teams" method="post">
-                <input type="hidden" name="_method" value="delete">
-                <input type="submit" name="delete" value="Delete Player">
-                <input type="hidden" name="player_id" value="<%= player.id %>">
-                </form>
-            <%end%>
-    	</ol>
+    <h3><%= team.name %></h3>
+    <form action="/teams" method="post">
+      <input type="hidden" name="_method" value="put">
+      <input type="text" name="new_name" placeholder="change your team name">
+      <input type="submit" name="submit_changes" value="submit your changes!">
+      <input type="hidden" name="team_id" value="<%=team.id%>"/>
+  </form>
+  <div class="team-info"> <% team.players.each do |player| %>
+      <p><%=player.name%></p>
+      <form action="/teams" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="delete" value="Delete Player">
+        <input type="hidden" name="player_id" value="<%= player.id %>">
+    </form>
     <%end%>
-  </body>
+</div>
+<%end%>
+</div>
+</body>
 </html>
