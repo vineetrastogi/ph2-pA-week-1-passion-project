@@ -1,10 +1,7 @@
 html {
 	background-color: beige;
+	font-family: 'Play', sans-serif;
 }
-/*
-a:hover {
-	text-shadow: 10px 10px 20px #003D00;
-	}*/
 
 	.header-links a:link {
 		color: white;
@@ -48,13 +45,13 @@ a:hover {
 
 	.error {
 		color: red;
-		padding-right: 440px;
+		padding-right: 400px;
 	}
 
 	.team-info {
 		font-size: 16px;
 		text-align: left;
-		margin-left: 135px;
+		margin-left: 175px;
 		margin-bottom: 25px;
 	}
 
@@ -77,5 +74,4 @@ a:hover {
 		margin: 0 auto;
 		text-align: center;
 		font-weight: bolder;
-
 	}
