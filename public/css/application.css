@@ -45,7 +45,7 @@ html {
 
 	.error {
 		color: red;
-		padding-right: 400px;
+		position: inline;
 	}
 
 	.team-info {
