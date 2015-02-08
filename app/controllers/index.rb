@@ -1,11 +1,11 @@
 # displays home page with login prompt
 get '/' do
-    # @new_user = User.create(username: params[:new_username], password: params[:new_password])
   erb :index
 end
 
 # analyzes and stores login info
 post '/' do
+  # new_user attempting to be created
   @new_user = User.create(username: params[:new_username], password: params[:new_password])
   @error = @new_user.errors[:username][0]
   erb :index
@@ -83,16 +83,11 @@ put '/teams' do
   @current_team = Team.find(@team_id)
   @current_team.name = @new_name
   @current_team.save
-  # @current_team.update_attribute(name: @new_name)
   redirect '/teams'
 end
 
 # allows the user to delete a player within the team
 delete '/teams' do
-  # @team_id = params[:team_id]
-  # @player_id = params[:player_id]
-  # @current_team = Team.find(@team_id)
-  # @current_team.players.find(@player_id).destroy
   player = Player.find(params[:player_id])
   player.destroy
   redirect '/teams'
