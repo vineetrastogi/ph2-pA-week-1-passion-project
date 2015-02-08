@@ -4,6 +4,10 @@ class User < ActiveRecord::Base
   has_many :teams
   include BCrypt
 
+  validates :username, presence: true
+  validates :password_hash, presence: true
+  validates :username, uniqueness: true
+
   def password
     @password ||= Password.new(password_hash)
   end

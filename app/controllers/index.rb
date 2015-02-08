@@ -21,15 +21,20 @@ end
 
 # allows user to enter team name
 post '/create_team' do
-  user = User.find_by(username: params[:username])
+  @user = User.find_by(username: params[:username])
 
-  redirect '/' unless user
-
-  if user.password == params[:password]
-    session[:user_id] = user.id
-    redirect '/create_team'
+  # redirect '/' unless user
+  if @user.password != params[:password]
+      redirect '/'
+      erb :index
   end
-  erb :create_team
+
+  if @user.password == params[:password]
+    session[:user_id] = @user.id
+    redirect '/create_team'
+    erb :create_team
+  end
+
 end
 
 # displays every team

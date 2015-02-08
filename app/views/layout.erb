@@ -18,10 +18,10 @@
   <title></title>
 </head>
 <body>
-  <% if session[:user_id] %>
+  <% if session[:user_id]%>
     <a href="/">Go Home</a>     <a href="/logout">Logout</a>
   <% else  %>
-    <a href="/">Go Home</a>     <a href="/">Login</a>
+    <a href="/">Go Home</a>
   <% end %>
   <%= yield %>
 </body>
