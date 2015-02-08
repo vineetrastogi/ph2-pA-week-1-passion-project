@@ -7,7 +7,7 @@ end
 # analyzes and stores login info
 post '/' do
   @new_user = User.create(username: params[:new_username], password: params[:new_password])
-  @new_user.errors[:username]
+  @error = @new_user.errors[:username][0]
   erb :index
 end
 
