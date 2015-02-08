@@ -5,13 +5,8 @@ end
 
 # analyzes and stores login info
 post '/' do
-  user = User.find_by(username: params[:username])
-
-  if user.password == params[:password]
-    session[:user_id] = user.id
-    redirect '/login'
-  end
-  "Please login, BRUH."
+  @new_user = User.create(username: params[:new_username], password: params[:new_password])
+  redirect '/'
 end
 
 get '/logout' do
@@ -26,19 +21,33 @@ end
 
 # allows user to enter team name
 post '/create_team' do
+  user = User.find_by(username: params[:username])
+
+  redirect '/' unless user
+
+  if user.password == params[:password]
+    session[:user_id] = user.id
+    redirect '/create_team'
+  end
   erb :create_team
 end
 
 # displays every team
 get '/teams' do
-  @teams = Team.all
+  @user = User.find(session[:user_id])
+  @teams = @user.teams
   erb :teams
 end
 
 # takes the last team created and adds the player which the user clicks on. This needs to be above category splat methods otherwise the splat will include /player
 post '/category/player' do
   added_player = params[:player_id]
-  @myteam = Team.last
+  @user = User.find(session[:user_id])
+
+  # @user.teams.create(name: params[:team_name])
+  @myteam = @user.teams.last
+  p "*" * 59
+  p @myteam
   @myteam.players << Player.find(added_player)
   erb :categories
 end
@@ -62,7 +71,7 @@ end
 
 # creates a team based on the name inputted by the user
 post '/category' do
-  Team.create(name: params[:team_name])
+  Team.create(name: params[:team_name], user_id: session[:user_id])
   erb :categories
 end
 
