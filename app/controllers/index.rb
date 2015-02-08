@@ -1,12 +1,14 @@
 # displays home page with login prompt
 get '/' do
+    @new_user = User.create(username: params[:new_username], password: params[:new_password])
   erb :index
 end
 
 # analyzes and stores login info
 post '/' do
   @new_user = User.create(username: params[:new_username], password: params[:new_password])
-  redirect '/'
+  @new_user.errors[:username]
+  erb :index
 end
 
 get '/logout' do
@@ -23,17 +25,13 @@ end
 post '/create_team' do
   @user = User.find_by(username: params[:username])
 
-  # redirect '/' unless user
-  if @user.password != params[:password]
-      redirect '/'
-      erb :index
-  end
-
-  if @user.password == params[:password]
+  if @user && @user.password == params[:password]
     session[:user_id] = @user.id
     redirect '/create_team'
-    erb :create_team
+  else
+    erb :index
   end
+  erb :create_team
 
 end
 
@@ -51,8 +49,6 @@ post '/category/player' do
 
   # @user.teams.create(name: params[:team_name])
   @myteam = @user.teams.last
-  p "*" * 59
-  p @myteam
   @myteam.players << Player.find(added_player)
   erb :categories
 end
