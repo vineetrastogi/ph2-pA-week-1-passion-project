@@ -3,12 +3,20 @@ get '/' do
   erb :index
 end
 
-# analyzes and stores login info
+# analyzes and stores login/registration info
 post '/' do
-  # new_user attempting to be created
-  @new_user = User.create(username: params[:new_username], password: params[:new_password])
-  @error = @new_user.errors[:username][0]
-  erb :index
+  # checking if registration info is correct
+  if params[:new_password].blank? && params[:new_username].blank?
+    @error = "You must type in something!"
+    erb :index
+  elsif params[:new_password].blank?
+    @error = "You must type in a password!"
+    erb :index
+  else
+    @new_user = User.create(username: params[:new_username], password: params[:new_password])
+    @error = @new_user.errors[:username][0]
+    erb :index
+  end
 end
 
 get '/logout' do
