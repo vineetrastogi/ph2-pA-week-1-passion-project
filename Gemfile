@@ -15,8 +15,6 @@ gem 'rake'
 
 gem 'shotgun'
 
-gem 'debugger'
-
 gem 'bcrypt'
 
 group :test do
