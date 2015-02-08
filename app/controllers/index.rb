@@ -1,6 +1,6 @@
 # displays home page with login prompt
 get '/' do
-    @new_user = User.create(username: params[:new_username], password: params[:new_password])
+    # @new_user = User.create(username: params[:new_username], password: params[:new_password])
   erb :index
 end
 
