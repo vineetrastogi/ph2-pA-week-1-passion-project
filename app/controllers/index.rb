@@ -65,7 +65,6 @@ get '/category' do
   erb :categories
 end
 
-
 # lists the categories to choose from
 get '/category/*' do
   @category = params[:splat][0].to_s
