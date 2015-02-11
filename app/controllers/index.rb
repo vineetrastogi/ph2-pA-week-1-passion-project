@@ -7,10 +7,10 @@ end
 post '/' do
   # checking if registration info is correct
   if params[:new_password].blank? && params[:new_username].blank?
-    @error = "You must type in something!"
+    @error = "Type in something you must!"
     erb :index
   elsif params[:new_password].blank?
-    @error = "You must type in a password!"
+    @error = "PASSWORD IS NEEDED BRUH"
     erb :index
   else
     @new_user = User.create(username: params[:new_username], password: params[:new_password])
@@ -99,5 +99,3 @@ delete '/teams' do
   player.destroy
   redirect '/teams'
 end
-
-

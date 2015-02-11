@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   has_many :teams
   include BCrypt
 
-  validates :username, :presence => {:message => "You must type in a username!"}
-  validates :username, :uniqueness => {:message => "That username is already taken, please type in another."}
+  validates :username, :presence => {:message => "Type in username you must"}
+  validates :username, :uniqueness => {:message => "Please stop trying to steal other people's usernames."}
 
   def password
     @password ||= Password.new(password_hash)
